@@ -36,7 +36,7 @@ const Register = () => {
                 const { status, data } = await handleQuery("GET", `user/${id}`);
     
                 if(status === "success") {
-                    const user = data[0];
+                    const user = data;
 
                     setDataForm({
                         name: user.nome,
